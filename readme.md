@@ -2,14 +2,22 @@
 
 ## Installing
 
-composer install
+Install all libraries:
 
-npm install
+> ```composer install```
 
-bower install
+> ```npm install```
 
-Edit .env
+> ```bower install```
+
+Then compile the project using **gulp**:
+
+> ```gulp```
+
+Then edit **.env**
 
 ## Developing
 
-gulp watch
+To keep .css up to date from sass:
+
+> ```gulp watch```

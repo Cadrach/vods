@@ -10,25 +10,27 @@ var module = angular.module('Application', [
 
     'mgcrea.ngStrap',
 
-    'ajoslin.promise-tracker'
+    'ajoslin.promise-tracker',
+
+    'VodsControllers'
 ])
 .config(function($routeProvider, $httpProvider, growlProvider){
-//    $routeProvider
-//        .when('/:appleId?', {
-//            templateUrl: 'modules/hexbin/html/index.html',
-//            controller: 'ctrlIndex',
-//            resolve: {
+    $routeProvider
+        .when('/', {
+            templateUrl: 'html/home.html',
+            controller: 'ctrlHome',
+            resolve: {
 //                user: function($http){
 //                    return $http.get('site/tool/user').then(function(result){return result.data});
 //                },
 //                constants: function($http){
 //                    return $http.get('site/hexbin/constants').then(function(result){return result.data});
 //                }
-//            }
-//        })
-//        .otherwise({
-//            redirectTo: '/'
-//        });
+            }
+        })
+        .otherwise({
+            redirectTo: '/'
+        });
 //
 //        //Register the interceptor via an anonymous factory
 //        //Using "unshift" to get at the head of the interceptors
@@ -53,6 +55,6 @@ var module = angular.module('Application', [
 //        growlProvider.globalTimeToLive(5000);
 
 }).run(function($rootScope, $location, $http, $templateCache, promiseTracker){
-
+        $rootScope.test = "HELLO WORLD";
 //    $rootScope.loadingTracker = promiseTracker();
 });
