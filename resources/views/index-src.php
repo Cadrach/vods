@@ -8,7 +8,7 @@
     <link href="css/app.css" rel="stylesheet" type="text/css">
 
     <!-- Libraries -->
-    <!-- build:js dist/libs.js -->
+    <!-- build:libraries dist/libs.js -->
     <script type="text/javascript" src="bower/angular/angular.js"></script>
     <script type="text/javascript" src="bower/angular-route/angular-route.js"></script>
     <script type="text/javascript" src="bower/angular-animate/angular-animate.js"></script>
@@ -19,10 +19,10 @@
     <!-- endbuild -->
 
     <!-- Application -->
-    <!-- NO-build:js dist/app.js -->
+    <!-- build:application dist/app.js -->
     <script type="text/javascript" src="js/ctrlHome.js"></script>
     <script type="text/javascript" src="js/application.js"></script>
-    <!-- NO-endbuild -->
+    <!-- endbuild -->
 
     <style>
         html, body {

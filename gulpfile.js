@@ -5,6 +5,7 @@ var uglify = require('gulp-uglify');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var rimraf = require('gulp-rimraf');
+var ngAnnotate = require('gulp-ng-annotate');
 
 var elixir = require('laravel-elixir');
 
@@ -37,7 +38,8 @@ gulp.task('minify', function() {
         .pipe(usemin({
             assetsDir: 'public',
             css: [minifyCss(), 'concat'],
-            js: [uglify(), 'concat']
+            libraries: [uglify(), 'concat'], //,
+            application: [ngAnnotate({add: true}), 'concat'] //, uglify()
         }))
         .pipe(gulp.dest('public'));
 });
