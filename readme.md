@@ -1,9 +1,15 @@
 # VODs
 
-## Deploy
+## Installing
+
 composer install
+
 npm install
+
 bower install
 
-## Dev
+Edit .env
+
+## Developing
+
 gulp watch

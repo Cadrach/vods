@@ -1,0 +1,29 @@
+{
+  "name": "VODs",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Cadrach"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Cadrach/vods",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-route": "^1.5.7",
+    "angular-animate": "^1.5.7",
+    "promise-tracker": "angular-promise-tracker#^2.2.2",
+    "angular-strap": "^2.3.9",
+    "angular-growl": "^0.4.0"
+  },
+  "resolutions": {
+    "angular": "1.5.7"
+  }
+}
